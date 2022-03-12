@@ -36,24 +36,20 @@ h1 {
     border: 2px solid black;
 }
 
-.clear-delete {
-    display: flex;
-    justify-content: space-around;
-}
-
-.clear-delete div {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding: 7px 50px;
-    border: 2px solid black;
-}
-
-.clear {
+.buttons .clear {
+    align-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-column: span 2;
     border-radius: 2px;
     background-color:cornflowerblue;
 }
 
-.delete {
+.buttons .delete {
+    align-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-column: span 2;
     border-radius: 2px;
     background-color: red;
 }
@@ -73,3 +69,9 @@ h1 {
     padding-bottom: 20px;
     text-align: center;
 }
+
+.buttons .equals {
+    background-color: rgb(57, 217, 13);
+}
+
+
