@@ -22,11 +22,14 @@
     padding-right: 25px;
     width: 400px;
     border: 2px solid black;
+    color: white;
+    font-weight:bold;
+    font-size: 15px;
 }
 
 h1 {
+    color: black;
     background-color: rgb(255, 255, 255);
-    margin: 5px;
     padding: 20px;
     width: 100%;
     text-align: right;
@@ -40,16 +43,18 @@ h1 {
 
 .clear-delete div {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding: 7px 50px;
     border: 2px solid black;
 }
 
 .clear {
+    border-radius: 2px;
     background-color:cornflowerblue;
 }
 
 .delete {
+    border-radius: 2px;
     background-color: red;
 }
 
@@ -60,6 +65,7 @@ h1 {
 }
 
 .buttons div {
+    border-radius: 4px;
     background-color: rgb(184, 181, 173);
     border: 2px solid black;
     margin: 5px;
