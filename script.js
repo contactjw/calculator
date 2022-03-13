@@ -27,7 +27,6 @@ function assignOperator(oper) {
     if (oper === "÷") operator = "/";
     else if (oper === "×") operator = "*";
     else operator = oper;
-    console.log(operator);
     num1 = input.textContent;
     shouldResetInput = true;
 }
@@ -35,7 +34,6 @@ function assignOperator(oper) {
 
 function evaluate() {
     if (operator === "" || num1 === "") return;
-    // else input.textContent = operate(operand, num1, num2);
     input.textContent = operate(operator, parseFloat(num1), parseFloat(input.textContent));
     num1 = "";
 }
