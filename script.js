@@ -5,11 +5,15 @@ let input = document.querySelector("h1");
 let digits = document.querySelectorAll(".digit");
 let operators = document.querySelectorAll(".operator");
 
+
+// Keyboard support event listeners
+document.addEventListener('keypress', () => keyPressed(event));
+
+
 // Event Listeners
 document.querySelector(".clear").addEventListener("click", () => clearScreen());
 document.querySelector(".delete").addEventListener("click", () => deleteDigit());
 document.querySelector(".equals").addEventListener("click", () => evaluate());
-
 
 
 for (let i = 0; i < operators.length; i++) {
@@ -65,6 +69,15 @@ function clearInput() {
     shouldResetInput = false;
 }
 
+function keyPressed(e) {
+    if ((e.key >= 0 && e.key <= 9) ||
+        e.key === ".") appendDigit(e.key);
+    if (e.key === "=" || e.key === "Enter") evaluate();
+    if (e.key === "Backspace") deleteDigit();
+    if (e.key === "/" || e.key === "*" || e.key === "+" || e.key === "-")
+        assignOperator(e.key);
+    if (e.key === "Escape") clearScreen();
+}
 
 
 // Math functions

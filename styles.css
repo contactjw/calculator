@@ -78,6 +78,8 @@ h1 {
     grid-template-rows: repeat(4, 1fr);
 }
 
+
+
 .buttons div {
     border-radius: 8px;
     background-color: rgba(243,245,242,255);
@@ -97,10 +99,7 @@ h1 {
     background-color: rgb(57, 217, 13);
 }
 
-.buttons .divide,
-.buttons .multiply,
-.buttons .subtract,
-.buttons .add {
+.buttons .operator {
     background-color: rgba(197,195,195,255);
 }
 
@@ -112,4 +111,27 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+
+/* active effects on buttons */
+div .digit:active {
+    background-color: rgb(205, 207, 204);
+}
+
+div .operator:active {
+    background-color: rgb(155, 155, 155);
+}
+
+
+div .equals:active {
+    background-color: rgb(49, 182, 12);
+}
+
+div .clear:active {
+    background-color:rgb(86, 127, 204);
+}
+
+div .delete:active {
+    background-color: rgb(212, 95, 104);
 }
