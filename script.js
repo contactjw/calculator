@@ -24,6 +24,8 @@ for (let i = 0; i < digits.length; i++) {
 
 // Functions
 function assignOperator(oper) {
+    if (operator !== "" && num1 !== "") 
+        input.textContent = operate(operator, parseFloat(num1), parseFloat(input.textContent));
     if (oper === "÷") operator = "/";
     else if (oper === "×") operator = "*";
     else operator = oper;
@@ -41,7 +43,8 @@ function evaluate() {
 
 function appendDigit(digit) {
     if (digit === "." && input.textContent.includes(".")) return;
-    if (input.textContent === "0" || shouldResetInput) clearInput();
+    if ((input.textContent === "0" || shouldResetInput) 
+    && digit !==".") clearInput();
     input.textContent += digit;
 }
 
@@ -64,6 +67,8 @@ function clearInput() {
 }
 
 
+
+// Math functions
 function add(num1, num2) {
     return (num1 + num2);
 }
