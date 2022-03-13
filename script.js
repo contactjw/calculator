@@ -42,9 +42,8 @@ function evaluate() {
 
 
 function appendDigit(digit) {
+    if ((input.textContent === "0" || shouldResetInput)) clearInput();
     if (digit === "." && input.textContent.includes(".")) return;
-    if ((input.textContent === "0" || shouldResetInput) 
-    && digit !==".") clearInput();
     input.textContent += digit;
 }
 
