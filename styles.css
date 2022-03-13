@@ -15,7 +15,7 @@
 
 .calculator {
     border-radius: 9px;
-    background-color: rgb(242, 240, 235);
+    background-color: rgba(62,79,98,255);
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
@@ -30,28 +30,45 @@
 h1 {
     color: black;
     background-color: rgb(255, 255, 255);
-    padding: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
     width: 100%;
-    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
     border: 2px solid black;
+    min-height: 79.5px;
 }
 
 .buttons .clear {
+    color: white;
     align-self: center;
     padding-top: 10px;
     padding-bottom: 10px;
     grid-column: span 2;
-    border-radius: 2px;
+    border-radius: 4px;
     background-color:cornflowerblue;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 
 .buttons .delete {
+    color: white;
     align-self: center;
     padding-top: 10px;
     padding-bottom: 10px;
     grid-column: span 2;
-    border-radius: 2px;
-    background-color: red;
+    border-radius: 4px;
+    background-color: rgba(245,108,120,255);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
 }
 
 .buttons {
@@ -61,8 +78,9 @@ h1 {
 }
 
 .buttons div {
-    border-radius: 4px;
-    background-color: rgb(184, 181, 173);
+    border-radius: 8px;
+    background-color: rgba(243,245,242,255);
+    color: black;
     border: 2px solid black;
     margin: 5px;
     padding-top: 20px;
@@ -70,8 +88,18 @@ h1 {
     text-align: center;
 }
 
+.buttons div:hover {
+    cursor: pointer;
+}
+
 .buttons .equals {
     background-color: rgb(57, 217, 13);
 }
 
+.buttons .divide,
+.buttons .multiply,
+.buttons .subtract,
+.buttons .add {
+    background-color: rgba(197,195,195,255);
+}
 
